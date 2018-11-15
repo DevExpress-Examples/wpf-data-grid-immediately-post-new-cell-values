@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/UpdateOnPropertyChanged/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/UpdateOnPropertyChanged/MainWindow.xaml.vb))
+* [MainWindow.xaml.cs](./CS/UpdateOnPropertyChanged/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/UpdateOnPropertyChanged/MainWindow.xaml.vb))
+* [Task.cs](./CS/UpdateOnPropertyChanged/Task.cs) (VB: [Task.vb](./VB/UpdateOnPropertyChanged/Task.vb))
+<!-- default file list end -->
 # How to make GridControl immediately save changes in a cell after editing
 
 
