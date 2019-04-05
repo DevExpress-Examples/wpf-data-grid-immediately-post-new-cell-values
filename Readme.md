@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [MainWindow.xaml](./CS/UpdateOnPropertyChanged/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/UpdateOnPropertyChanged/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/UpdateOnPropertyChanged/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/UpdateOnPropertyChanged/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/UpdateOnPropertyChanged/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/UpdateOnPropertyChanged/MainWindow.xaml.vb))
 * [Task.cs](./CS/UpdateOnPropertyChanged/Task.cs) (VB: [Task.vb](./VB/UpdateOnPropertyChanged/Task.vb))
 <!-- default file list end -->
