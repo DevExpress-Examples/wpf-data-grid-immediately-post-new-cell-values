@@ -13,16 +13,6 @@
 // You can find sample updates and versions for different programming languages here:
 // http://www.devexpress.com/example=E4155
 
-// Developer Express Code Central Example:
-// How to make GridControl immediately save changes in a cell after editing
-// 
-// This example shows how to update GridControl DataSource right after a cell
-// editor value has been changed. To implement this scenario, we have introduced
-// the CommitHelper.CommitOnValueChanged attached property.
-// 
-// You can find sample updates and versions for different programming languages here:
-// http://www.devexpress.com/example=E4155
-
 using System.Collections.ObjectModel;
 using System.Windows;
 
