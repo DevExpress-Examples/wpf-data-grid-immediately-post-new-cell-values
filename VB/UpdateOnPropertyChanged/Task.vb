@@ -60,7 +60,7 @@ Namespace UpdateOnPropertyChanged
 			End Set
 		End Property
 
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+		Public Event PropertyChanged As PropertyChangedEventHandler
 		Protected Sub RaisePropertyChanged(ByVal propertyName As String)
 			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 		End Sub
