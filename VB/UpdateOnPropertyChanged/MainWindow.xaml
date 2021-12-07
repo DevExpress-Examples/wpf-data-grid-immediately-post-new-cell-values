@@ -4,7 +4,7 @@
         xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
         xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
         xmlns:local="clr-namespace:UpdateOnPropertyChanged"
-        Title="MainWindow" Width="525" Height="350">
+        Title="MainWindow" Width="530" Height="300">
 
     <Window.DataContext>
         <local:MainViewModel/>
@@ -12,7 +12,7 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="45"/>
+            <RowDefinition Height="60"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -32,7 +32,7 @@
                          SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
                          AutoGenerateColumns="AddNew">
             <dxg:GridControl.View>
-                <dxg:TableView EnableImmediatePosting="True"/>
+                <dxg:TableView ShowGroupPanel="False" EnableImmediatePosting="True"/>
             </dxg:GridControl.View>
         </dxg:GridControl>
     </Grid>
