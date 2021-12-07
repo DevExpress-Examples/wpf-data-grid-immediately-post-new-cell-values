@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to make GridControl immediately save changes in a cell after editing
 ' 
 ' This example shows how to update GridControl's data source right after a cell
@@ -12,7 +12,6 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E4155
-
 ' Developer Express Code Central Example:
 ' How to make GridControl immediately save changes in a cell after editing
 ' 
@@ -22,7 +21,6 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E4155
-
 Imports System
 Imports System.Windows
 Imports System.Windows.Threading
@@ -30,7 +28,9 @@ Imports DevExpress.Xpf.Grid
 Imports DevExpress.Xpf.Grid.TreeList
 
 Namespace UpdateOnPropertyChanged
+
     Friend Class CommitHelper
+
         Public Shared ReadOnly CommitOnValueChangedProperty As DependencyProperty = DependencyProperty.RegisterAttached("CommitOnValueChanged", GetType(Boolean), GetType(CommitHelper), New PropertyMetadata(AddressOf CommitOnValueChangedPropertyChanged))
 
         Public Shared Sub SetCommitOnValueChanged(ByVal element As GridColumnBase, ByVal value As Boolean)
@@ -44,17 +44,14 @@ Namespace UpdateOnPropertyChanged
         Private Shared Sub CommitOnValueChangedPropertyChanged(ByVal source As DependencyObject, ByVal e As DependencyPropertyChangedEventArgs)
             Dim col As GridColumnBase = TryCast(source, GridColumnBase)
             If col.View Is Nothing Then
-                Dispatcher.CurrentDispatcher.BeginInvoke(New Action(Of GridColumnBase, Boolean)(Sub(column, subscribe) ToggleCellValueChanging(column, subscribe)), col, DirectCast(e.NewValue, Boolean))
+                Call Dispatcher.CurrentDispatcher.BeginInvoke(New Action(Of GridColumnBase, Boolean)(Sub(column, subscribe) ToggleCellValueChanging(column, subscribe)), col, CBool(e.NewValue))
             Else
-                ToggleCellValueChanging(col, DirectCast(e.NewValue, Boolean))
+                Call ToggleCellValueChanging(col, CBool(e.NewValue))
             End If
         End Sub
 
         Private Shared Sub ToggleCellValueChanging(ByVal col As GridColumnBase, ByVal subscribe As Boolean)
-            If Not(TypeOf col.View Is DataViewBase) Then
-                Return
-            End If
-
+            If Not(TypeOf col.View Is DataViewBase) Then Return
             If subscribe Then
                 If TypeOf col.View Is TreeListView Then
                     AddHandler TryCast(col.View, TreeListView).CellValueChanging, AddressOf TreeCellValueChanging
