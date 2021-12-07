@@ -6,7 +6,7 @@
 
 # WPF Data Grid - Immediately Post New Cell Values
 
-This example shows how to use the [DataViewBase.EnableImmediatePosting](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataViewBase.EnableImmediatePosting) property to post values to a data source while a cell editor is opened.
+This example shows how to use the [DataViewBase.EnableImmediatePosting](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataViewBase.EnableImmediatePosting) property to post values to a data source while a cell editor is active.
 
 ![image](https://user-images.githubusercontent.com/65009440/144851421-e937f027-1df5-48f4-bcdb-5bb4d914349e.png)
 
