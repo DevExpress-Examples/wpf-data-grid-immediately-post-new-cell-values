@@ -33,7 +33,7 @@ This example shows how to use the [DataViewBase.EnableImmediatePosting](https://
 - [WPF Data Grid - Disable Rows Based on Their Values](https://github.com/DevExpress-Examples/wpf-data-grid-disable-rows-based-on-their-values)
 - [WPF Data Grid - Read-Only and Enabled State Binding](https://github.com/DevExpress-Examples/wpf-grid-read-only-and-enabled-binding)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-immediately-post-new-cell-values&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-immediately-post-new-cell-values&~~~was_helpful=no)
 
